@@ -1,0 +1,16 @@
+<div class="col-md-6">
+  <h2 class="text-center">Edit Book</h2>
+  <form [formGroup]="editForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Book tittle:</label>
+      <input formControlName="name" placeholder="name" name="name" class="form-control" id="name">
+    </div>
+
+    <div class="form-group">
+      <label for="author">author:</label>
+      <input formControlName="author" placeholder="author" name="author" class="form-control" id="author">
+    </div>
+
+    <button class="btn btn-success">Update</button>
+  </form>
+</div>

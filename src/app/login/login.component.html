@@ -1,0 +1,37 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <p>Bookapp</p>
+    <span class="example-fill-remaining-space"></span>
+    <span class="example-spacer"></span>
+
+  </mat-toolbar-row>
+</mat-toolbar>
+
+
+  <mat-card-header>
+    <mat-card-title>Login</mat-card-title>
+  </mat-card-header>
+
+    <form (ngSubmit)="onSubmit()">
+      <table class="example-full-width" cellspacing="0">
+        <tr>
+          <td>
+            <div class="form-group">
+              <input [formControl]="email" placeholder="Email" class="form-control" name="email" id="email" required>
+
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="form-group">
+              <input [formControl]="password" placeholder="Password" class="form-control" type="password" name="password" id="password" required>
+            </div>
+
+        </tr></table> <mat-card-actions>
+      <input mat-raised-button color="primary" type="submit" />
+    </mat-card-actions>
+    </form>
+
+
+
